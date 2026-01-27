@@ -24,6 +24,12 @@ typedef struct PixtyI8Arr {
 	int32_t count;
 } PixtyI8Arr;
 
+typedef struct PixtyU8Arr {
+	uint8_t *pArr;
+	uint32_t size;
+	uint32_t count;
+} PixtyU8Arr;
+
 typedef struct PixtyStr {
 	char *pStr;
 } PixtyStr;
