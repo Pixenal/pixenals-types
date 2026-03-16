@@ -40,6 +40,10 @@ typedef struct PixtyStrArr {
 	int32_t count;
 } PixtyStrArr;
 
+typedef struct PixtyValidIdx {
+	uint32_t idx : 31;
+	uint32_t valid : 1;
+} PixtyValidIdx;
 
 typedef struct PixtyV2_I8 {
 	int8_t d[2];
