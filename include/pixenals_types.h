@@ -45,6 +45,11 @@ typedef struct PixtyValidIdx {
 	uint32_t valid : 1;
 } PixtyValidIdx;
 
+typedef struct PixtyValidNum {
+	uint32_t num : 31;
+	uint32_t valid : 1;
+} PixtyValidNum;
+
 typedef struct PixtyV2_I8 {
 	int8_t d[2];
 } PixtyV2_I8;
