@@ -12,6 +12,12 @@ typedef struct PixtyRange {
 	int32_t end;
 } PixtyRange;
 
+typedef struct PixtyRangeArr {
+	PixtyRange *pArr;
+	int32_t size;
+	int32_t count;
+} PixtyRangeArr;
+
 typedef struct PixtyI32Arr {
 	int32_t *pArr;
 	int32_t size;
