@@ -57,6 +57,17 @@ typedef struct PixtyValidIdxArr {
 	int32_t count;
 } PixtyValidIdxArr;
 
+typedef struct PixtyValidIdx64 {
+	uint64_t idx : 63;
+	uint64_t valid : 1;
+} PixtyValidIdx64;
+
+typedef struct PixtyValidIdx64Arr {
+	PixtyValidIdx64 *pArr;
+	int32_t size;
+	int32_t count;
+} PixtyValidIdx64Arr;
+
 typedef struct PixtyValidNum {
 	uint32_t num : 31;
 	uint32_t valid : 1;
