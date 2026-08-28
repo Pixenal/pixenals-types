@@ -40,6 +40,12 @@ typedef struct PixtyStr {
 	char *pStr;
 } PixtyStr;
 
+//this is for strings, do not use for data (size is int32)
+typedef struct PixtyStrSized {
+	char *pArr;//uses pArr instead of pStr for compatability with PIXALC_DYN_ARR macros
+	int32_t size;
+} PixtyStrSized;
+
 typedef struct PixtyStrArr {
 	PixtyStr *pArr;
 	int32_t size;
