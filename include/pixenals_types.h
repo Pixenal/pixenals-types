@@ -117,6 +117,12 @@ typedef struct PixtyV3_F32 {
 	float d[3];
 } PixtyV3_F32;
 
+typedef struct PixtyV3_F32Arr {
+	PixtyV3_F32 *pArr;
+	int32_t size;
+	int32_t count;
+} PixtyV3_F32Arr;
+
 typedef struct PixtyV3_F64 {
 	double d[3];
 } PixtyV3_F64;
